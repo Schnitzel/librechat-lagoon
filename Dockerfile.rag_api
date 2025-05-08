@@ -1,0 +1,5 @@
+FROM ghcr.io/danny-avila/librechat-rag-api-dev-lite:latest
+
+ENV EMBEDDINGS_PROVIDER=openai \
+    EMBEDDINGS_MODEL=embeddings \
+    RAG_PORT=8080
