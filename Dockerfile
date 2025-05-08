@@ -4,7 +4,7 @@ USER 0
 
 COPY fix-permissions /bin/
 
-RUN fix-permissions /app/api/logs /app/uploads /app/client/public/images
+RUN mkdir -p /app/api/logs /app/uploads /app/client/public/images && fix-permissions /app/api/logs /app/uploads /app/client/public/images
 
 ENV MONGO_URI=mongodb://mongodb:27017/LibreChat \
     RAG_API_URL=http://rag-api:8800 \
