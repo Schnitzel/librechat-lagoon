@@ -6,7 +6,7 @@ services:
     restart: always
     ports:
       - "3000:3000"
-    user: "1000"
+    user: "10000"
     env_file:
       - .env
     volumes:
@@ -23,7 +23,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.rag_api
-    user: "1000"
+    user: "10000"
     env_file:
       - .env
     volumes:

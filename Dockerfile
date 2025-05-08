@@ -1,5 +1,7 @@
 FROM ghcr.io/danny-avila/librechat-dev:latest
 
+USER 0
+
 COPY fix-permissions /bin/
 
 RUN fix-permissions /app/api/logs /app/uploads /app/client/public/images
