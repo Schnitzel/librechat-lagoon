@@ -6,4 +6,4 @@ RUN mkdir -p /app/uploads && fix-permissions /app/uploads
 
 ENV EMBEDDINGS_PROVIDER=openai \
     EMBEDDINGS_MODEL=embeddings \
-    RAG_PORT=8080
+    RAG_PORT=8800
