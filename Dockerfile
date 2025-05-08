@@ -1,5 +1,9 @@
 FROM ghcr.io/danny-avila/librechat-dev:latest
 
+COPY fix-permissions /bin/
+
+RUN fix-permissions /app/api/logs /app/uploads /app/client/public/images
+
 ENV MONGO_URI=mongodb://mongodb:27017/LibreChat \
     RAG_API_URL=http://rag-api:8080 \
     HOST=0.0.0.0 \
