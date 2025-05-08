@@ -19,7 +19,7 @@ services:
     image: uselagoon/mongo:latest
     labels:
       lagoon.type: mongodb
-  rag_api:
+  rag-api:
     build:
       context: .
       dockerfile: Dockerfile.rag_api

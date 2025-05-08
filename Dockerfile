@@ -1,7 +1,7 @@
 FROM ghcr.io/danny-avila/librechat-dev:latest
 
 ENV MONGO_URI=mongodb://mongodb:27017/LibreChat \
-    RAG_API_URL=http://rag_api:8080 \
+    RAG_API_URL=http://rag-api:8080 \
     HOST=0.0.0.0 \
     PORT=3000 \
     NO_INDEX=true \
